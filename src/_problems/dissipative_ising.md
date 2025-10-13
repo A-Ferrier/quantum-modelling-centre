@@ -6,7 +6,7 @@ show_author: true
 toc_sidebar: true
 layout: single
 classes: wide
-excerpt: "In this tutorial, we will use exact diagonalization, [tMPS.jl]({{ site.baseurl }}/software/tmps), and [VMPOMC.jl]({{ site.baseurl }}/software/vmpomc) to study the properties of a class of dissipative transverse-field Ising models."
+excerpt: "In this tutorial, we will study the properties of a class of dissipative transverse-field Ising models."
 ---
 
 {% if page.author %}
@@ -17,7 +17,7 @@ excerpt: "In this tutorial, we will use exact diagonalization, [tMPS.jl]({{ site
   </p>
 {% endif %}
 
-In this tutorial, we will use exact diagonalization, [tMPS.jl]({{ site.baseurl }}/software/tmps), and [VMPOMC.jl]({{ site.baseurl }}/software/vmpomc) to study the properties of a class of dissipative transverse-field Ising models.
+In this tutorial, we will use exact diagonalization, [VMPOMC.jl]({{ site.baseurl }}/software/vmpomc) and [t-VMPOMC.jl]({{ site.baseurl }}/software/tvmpomc) to study the properties of a class of dissipative transverse-field Ising models.
 
 # Recommended tutorials
 
@@ -47,22 +47,11 @@ Physically, $\Gamma_k$ implements spontaneous emission of an excited spin into t
 - Collective decay: $\Gamma = \sqrt{\gamma_c},\sum_k \sigma^-_k$, coupling the entire chain to a common bath and leading to superradiant effects.
 
 
-# Dynamics
-
-## Integrating the master equation
-
-## t-MPS
-
-## t-VMPOMC
-
-## Exercises
-
 # Steady state
 
-## Exact diagonalization
+We will begin by investigating the non-equilibrium steady state of the model, i.e. the fixed point of the dynamics reached at very long times, $\partial_t \rho = 0$. We will do so with the help of exact diagonalization and the time-independent variational principle.
 
-As one observes above, at long times, the system reaches a steady state $\partial_t \rho = 0$.
-In many cases, one is interested specifically in the steady state; it is possible to characterize it without explicitly time-evolving the system as above, thereby bypassing expensive entangling dynamics. 
+## Exact diagonalization
 
 Let us begin by constructing and diagonalizing the Lindbladian superoperator. We first load the necessary packages and define Pauli operators, along with their sparse variants:
 ```julia
@@ -345,13 +334,20 @@ The converged magnetizations for $N=20$ can now be loaded and plotted against ED
 
 ## Exercises
 
-> - A bond dimension of $χ=6$ is found to give accurate estimates of the magnetization at low computational overhead at $N=20$, but larger χ improves fidelity at increased cost. To see this, fix the value of the local field $h$ and plot the converged magnetizations as function of the bond dimension, starting from $χ=1$, tracking the attained values of the cost function. Use the `time()` function in Julia to also track the total optimization time. Observe how an insufficeintly small bond dimension causes the cost function to plateau at a value that may higher than the set threshold, preventing the results from ever converging.
+> - A bond dimension of $χ=6$ is found to give accurate estimates of the magnetization at low computational overhead at $N=20$, but larger χ improves fidelity at increased cost. To see this, fix the value of the local field $h$ and plot the converged magnetizations as function of the bond dimension, starting from $χ=1$, tracking the attained values of the cost function. Use the `time()` function in Julia to also track the total optimization time. Observe how an insufficiently small bond dimension causes the cost function to plateau at a value that may higher than the set threshold, preventing the results from ever converging.
 > - What happens when we increase or decrease the interaction strength $J$? What is the minimum bond dimension required for convergence in those cases? 
 > - Try to vary and find the optimal hyperparameter values that lead to most rapid convergence. How much can the convergence threshold be loosened before the results become inaccurate?
 > - Suppose the interaction with the external environment leads to spin decay to the $\ket{\rightarrow}$ state, described by the Lindblad jump operator $\Gamma_k = \sqrt{\gamma}(\sigma^z - i\sigma^y)/2$. Compare the resultant phase diagrams for $m_x$, $m_y$, and $m_z$.
 > - Instead of starting each optimization process from a completely random MPO, it may be more efficient to load an already converged MPO at slightly different model parameter values. Try implementing this by appropriately modifying the above scripts.
 
 
+
+# Dynamics
+
+To be completed.
+
+
+
 # Two-dimensional lattices - iPEPO
 
-TBD.
+To be completed.

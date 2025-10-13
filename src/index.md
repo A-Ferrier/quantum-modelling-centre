@@ -2,7 +2,7 @@
 layout: splash
 title: "Quantum Modelling Center"
 intro:
-    - excerpt: "Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, proin faucibus voluptate felis id sollicitudin."
+    - excerpt: ""
 software:
     - title: "Research Software"
       image_path: https://picsum.photos/300/200
@@ -11,13 +11,13 @@ software:
       btn_label: "Click here"
 problems:
     - title: "Example Problems"
-      image_path: https://picsum.photos/300/200
-      excerpt: "Pedagogical walk-throughs through some archetypal problems soluable with our software packages."
-      url: "/tutorials/"
+      image_path: https://picsum.photos/300/201
+      excerpt: "Pedagogical walk-throughs through some toy problems soluable with our software packages."
+      url: "/problems/"
       btn_label: "Click here"
 tutorials:
     - title: "Tutorials"
-      image_path: https://picsum.photos/300/200
+      image_path: https://picsum.photos/300/202
       excerpt: "Assorted guides on the theory and tools used across the software packages."
       url: "/tutorials/"
       btn_label: "Click here"

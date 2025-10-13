@@ -19,7 +19,7 @@ It’s designed as a user-friendly environment, showcasing software capabilities
     <h3>Jack Dunham</h3>
     <p>- CTP PAS<br>
     - Department of Physics and Astronomy, UCL<br>
-    - CCQP, Flatiron Institute</p>
+    - CCQ, Flatiron Institute, Simons Foundation</p>
   </div>
   <div>
     <img src="{{ site.baseurl }}/assets/images/jdunham.webp" 
