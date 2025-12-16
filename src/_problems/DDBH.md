@@ -25,26 +25,15 @@ In this tutorial, we will use exact diagonalization (in a truncated Fock basis),
 
 # Introduction
 
-We consider a transverse-field Ising model in one-dimension described by the Hamiltonian
+In the most general form, without at this stage specifying the lattice geometry, the Hamiltonian for a driven Bose-Hubbard model can be written in the frame rotating with the driving frequency as
 \begin{equation}
-H = J\sum_i \sigma^z_i \sigma^z_{i+1} + h\sum_i \sigma^x_i.
+\hat{H} = \sum_j \left( -\Delta\hat{a}^\dagger_j\hat{a}_j +\frac{U}{2}\hat{a}^\dagger_j\hat{a}^\dagger_j\hat{a}_j\hat{a}_j +F_j\hat{a}^\dagger_j + F_j^*\hat{a}_j \right) -\sum_{j,j'} \left(J_{j,j'}\hat{a}^\dagger_j\hat{a}_{j'} + J^*_{j,j'}\hat{a}^\dagger_{j'}\hat{a}_j \right) \, ,
 \end{equation}
-The ground state properties of the system are well understood.
-Here, we are interested in exploring its non-equilibrium properties. We assume that the interactions of the system of spins with the external enviornment is well described by a Markovian Lindblad master equation for the many-body density matrix $\rho$,
+where $\Delta$ gives the detuning between the on-site energy and the driving frequency, $U$ the two-body interaction strength, $F_j$ the driving amplitude on each site $j$, and $J_{j,j'}$ the hopping between sites (typically $J_{j,j'} = J$ for connected sites and 0 otherwise).  Including the effects of dissipation to the external enviornment, the evolution of the system as described by the many-body density matrix $\hat{\rho}$ is given by a Markovian Lindblad master equation
 \begin{equation} 
-    \partial_t \rho = -i[H,\rho] + \sum_k \left(\Gamma_k \rho \Gamma_k^\dagger - \frac{1}{2}\{\Gamma_k^\dagger \Gamma_k,\rho\}\right) := \mathcal{L}[\rho]
+    \frac{\partial\hat{\rho}}{\partial t} = -i\left[\hat{H}, \hat{\rho}\right] + \sum_j\frac{\gamma}{2}\left(2\hat{a}_j\hat{\rho}\hat{a}^\dagger_j - \hat{a}^\dagger_j\hat{a}_j\hat{\rho} - \hat{\rho}\hat{a}^\dagger_j\hat{a}_j\right) 
 \end{equation}
-The superoperator $\mathcal{L}$ is often referred to as the Lindbladian. Here, each jump operator $\Gamma_k$ encodes a specific dissipative process acting on site $k$. In this example we choose
-\begin{equation} 
-\Gamma_k = \sqrt{\gamma}\,\sigma^-_k,
-\end{equation}
-where
-- $\sigma^- = (\sigma^x - i\sigma^y)/2$ is the spin-lowering operator on a single site.
-- $\gamma$ is the dissipation rate (we set $\gamma=1$ in our units).
-
-Physically, $\Gamma_k$ implements spontaneous emission of an excited spin into the environment, driving each spin toward the $|\downarrow\rangle$ state.  The competition among the interaction between neighbouring spins ($J\sigma^z_i\sigma^z_{i+1}$), coherent transverse-field flips ($h\sigma^x$) and dissipative decay ($\sqrt{\gamma}\sigma^-$) gives rise to nontrivial non-equilibrium dynamics and steady states.  Other common choices include:
-- Dephasing: $\Gamma_k = \sqrt{\gamma_z}\sigma^z_k$, which randomizes the relative phase in the $[\ket{\uparrow}, \ket{\downarrow}]$ basis without changing populations.
-- Collective decay: $\Gamma = \sqrt{\gamma_c},\sum_k \sigma^-_k$, coupling the entire chain to a common bath and leading to superradiant effects.
+where $\gamma$ is the dissipation rate (we set $\gamma=1$ in our units).
 
 
 
@@ -53,6 +42,7 @@ Physically, $\Gamma_k$ implements spontaneous emission of an excited spin into t
 
 
 
-# Two-dimensional lattices - iPEPO
 
-To be completed.
+
+
+
