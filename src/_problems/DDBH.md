@@ -17,7 +17,7 @@ excerpt: "In this tutorial, we will study the behaviour of nonlinear bosonic lat
   </p>
 {% endif %}
 
-In this tutorial, we will use exact diagonalization (in a truncated Fock basis), and [Positive P]({{ site.baseurl }}/software/DDBHPP) to study the behaviour of some examples of driven dissipative Bose-Hubbard models.
+In this tutorial, we will use [Positive P]({{ site.baseurl }}/software/DDBHPP) to study the behaviour of some examples of driven dissipative Bose-Hubbard models.
 
 # Recommended tutorials
 
