@@ -44,3 +44,11 @@ Including dissipation, the state of the system evolves according to the master e
 \end{equation}
 
 where $D[\hat{X}] = 2\hat{X}\hat{\rho}\hat{X}^\dagger - \hat{X}^\dagger\hat{X}\hat{\rho} - \hat{\rho}\hat{X}^\dagger\hat{X}$ are Lindbladian dissipation terms, for which we consider three kinds of dissipation: single particle bosonic dissipation $\gamma$, spin decay $\Gamma_\downarrow$, and spin dephasing $\Gamma_\phi$.  
+
+# Single site
+
+To be completed.
+
+# Jaynes-Cummings-Hubbard lattices
+
+To be completed.  
