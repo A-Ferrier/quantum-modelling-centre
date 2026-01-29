@@ -1,7 +1,7 @@
 ---
 title: "Spin-Boson Model"
 collection: problems
-author: A-Ferrier
+author: aferrier
 show_author: true
 toc_sidebar: true
 layout: single
