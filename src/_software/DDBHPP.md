@@ -2,7 +2,7 @@
 title: "DDBHPP"
 author: aferrier
 header: 
-    teaser: 
+    teaser: /assets/images/key_image_ppdd.png
 github: "A-Ferrier/DDBHPP"
 layout: single
 classes: wide
