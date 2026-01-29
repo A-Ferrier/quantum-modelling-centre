@@ -51,4 +51,5 @@ from inside the simulation directory.
 
 # Further reading:
 [P. Deuar, A. Ferrier, M. Matuszewski, G. Orso, M. H. Szymańska, Fully Quantum Scalable Description of Driven-Dissipative Lattice Models. PRX Quantum 2, 010319 (2021)](https://doi.org/10.1103/PRXQuantum.2.010319)
+
 [A. Ferrier, M. Matuszewski, P. Deuar, M. H. Szymańska, Antibunching in locally driven dissipative Lieb lattices. arXiv:2512.01645 [quant-ph].](https://arxiv.org/abs/2512.01645)
