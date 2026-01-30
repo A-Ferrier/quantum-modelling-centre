@@ -5,12 +5,15 @@ layout: single
 classes: wide
 ---
 
+---
+
 # About the code platform
 
 This code platform featuring open codes and models was developed as part of the EUCENTRAL project (Horizon Europe project no. 101186579). It will serve as a testing environment for both theoretical concepts and technological solutions. It will enable the evaluation of the feasibility of new technological ideas before proceeding to experimental trials and implementations. 
 
-It’s designed as a user-friendly environment, showcasing software capabilities and modelling skills, to foster interest in the field and pave the way for new research and collaboration. The website includes the Research Software section, featuring software packages, and the Tutorial section, featuring tutorials on software development. Apart from these, we’re also including an Example problems section, along with proposed solutions, to teach you how to use these in practice.
+It's designed as a user-friendly environment, showcasing software capabilities and modelling skills, to foster interest in the field and pave the way for new research and collaboration. The website includes the Research Software section, featuring software packages, and the Tutorial section, featuring tutorials on software development. Apart from these, we’re also including an Example problems section, along with proposed solutions, to teach you how to use these in practice.
 
+---
 
 # Developers
 
@@ -30,6 +33,20 @@ It’s designed as a user-friendly environment, showcasing software capabilities
 
 <div style="display: flex; align-items: center; gap: 20px; margin: 20px 0;">
   <div style="flex: 1;">
+    <h3>Alex Ferrier</h3>
+    <p>- CTP PAS<br>
+    - Department of Physics and Astronomy, UCL</p>
+  </div>
+  <div>
+    <img src="{{ site.baseurl }}/assets/images/Alex_Ferrier.webp" 
+         alt="Jack Dunham" 
+         style="width: 160px; height: auto;">
+  </div>
+</div>
+
+
+<div style="display: flex; align-items: center; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1;">
     <h3>Dawid A. Hryniuk</h3>
     <p>- CTP PAS<br>
     - Department of Physics and Astronomy, UCL<br>
@@ -42,7 +59,7 @@ It’s designed as a user-friendly environment, showcasing software capabilities
   </div>
 </div>
 
-
+---
 
 # Institutions
 
@@ -56,6 +73,8 @@ CTP PAS is the institution implementing the EUCENTRAL grant and its principal in
 ![cft]({{ site.baseurl }}/assets/images/ucl_logo.png){: style="width: 300px; height: auto; display: block; margin: 0 auto;"}
 
 **University College London (UCL)**, est. 1826...
+
+---
 
 # About EUCENTRAL project
 
