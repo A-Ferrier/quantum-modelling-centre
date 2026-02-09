@@ -39,6 +39,15 @@ where $\Delta$ gives the detuning between the on-site energy and the driving fre
 
 where $\gamma$ is the dissipation rate (we set $\gamma=1$ in our units).
 
+# Single Site
+
+## Positive-P method
+
+We will start by calculating the observables for the limiting case of the model of a single site nonlinear bosonic mode with consequently no hopping term.  Using [Positive-P]({{ site.baseurl }}/software/DDBHPP) simulations, we generate sets of stochastic trajectories for two complex variables $\alpha(t)$ and $\beta(t)$.  We will calculate the occupation $n$ and second-order correlation $g^{(2)}(0)$, which in the positive-P representation can be calculated by corresponding averages over trajectories: 
+$$n = \langle \hat{a}^\dagger \hat{a} \rangle = \langle \alpha \beta \rangle_PP\, ,$$
+$$g^{(2)}(0) = \frac{\langle \hat{a}^\dagger \hat{a}^\dagger \hat{a} \hat{a} \rangle}{\langle \hat{a}^\dagger \hat{a} \rangle^2} = \frac{\langle \alpha^2 \beta^2 \rangle_PP}{\langle \alpha \beta \rangle_PP^2}\, .$$
+
+
 
 
 
